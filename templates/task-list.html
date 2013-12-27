@@ -1,0 +1,17 @@
+<% if(this.length === 0) { %>
+<h4>Not tasks found!</h4>
+<% } else { %>
+<h4><% this.length %> tasks found!</h4>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Title</th>
+  </tr>
+  <% for(var i in this) { var k = this[i].key, v = this[i].value; %>
+  <tr>
+    <td>#<% k %></td>
+    <td><% v.title %></td>
+  </tr>
+  <% } %>
+</table>
+<% } %>

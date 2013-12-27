@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rememe Client</title>
+    <link rel="stylesheet" href="jqm/jquery.mobile-1.4.0.min.css" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script>
+      $(document).bind("mobileinit", function(){
+        // $.mobile.page.prototype.options.theme = 'e';
+      });
+    </script>
+    <script src="jqm/jquery.mobile-1.4.0.min.js"></script>
+    <script src="js/rememe-client.js"></script>
+    <script src="js/simple-template.js"></script>
+    <script src="js/rememe-client-app.js"></script>
+  </head>
+  <body>
+  
+    <div id="plogin" data-role="page">
+      <div data-role="header">
+        <h2>Rememe Client: Login</h2>
+      </div>
+      <div data-role="content">
+        <form style="margin: auto; max-width: 300px">
+          <label for="ploginusr">e-mail</label>
+          <input id="ploginusr" type="text" name="ploginusr" />
+          <label for="ploginpwd">password</label>
+          <input id="ploginpwd" type="password" name="ploginpwd" />
+          <input id="ploginenter" type="button" value="Enter" />
+          <input id="ploginnew" type="button" value="New account" />
+          <label for="ploginvcode">validation code</label>
+          <input id="ploginvcode" type="text" name="ploginvcode" />
+          <input id="ploginvalidate" type="button" value="Validate account" />
+        </form>
+      </div>
+      <div data-role="footer">
+        <p>Rememe Client</p>
+      </div>
+    </div>
+  
+    <div id="pmsg" data-role="dialog">
+      <div data-role="header">
+        <h2>title</h2>
+      </div>
+      <div data-role="content">
+        <p>message</p>
+      </div>
+      <div data-role="footer">
+        <a data-icon="back" class="ui-btn-right">Close</a>
+        <input type="button" value="NONE" />
+      </div>
+    </div>
+  
+    <div id="plist" data-role="page">
+      <div data-role="header">
+        <a href="index.html" data-icon="gear" class="ui-btn-right">Options</a>
+        <h2>Task list</h2>
+      </div>
+      <div data-role="content">
+        <div id="plistnotes">
+        </div>
+      </div>
+      <div data-role="footer">
+        <p>Rememe Client</p>
+      </div>
+    </div>
+
+    <div id="puserprefs" data-role="page">
+      <div data-role="header">
+        <h2>User preferences</h2>
+      </div>
+      <div data-role="content">
+        <h1>Main content</h1>
+        <p>Bla, bla, ...</p>
+      </div>
+      <div data-role="footer">
+        <p>Rememe Client</p>
+      </div>
+    </div>
+
+  </body>
+</html>
